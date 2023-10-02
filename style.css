@@ -1,0 +1,213 @@
+body {
+    background: url(techno4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body .card {
+    height: 85vh;
+    width: 35vw;
+    border-radius: 2rem;
+    border: rgb(53, 53, 53) 0.1rem solid;
+    border-color: rgb(79, 156, 234);
+    text-align: center;
+    background: rgba(255, 255, 255, 0.313);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+
+    margin-left: 30vw;
+    margin-top: 5vw;
+    box-shadow: 2vw 2vw 12vw 3vw #231f1f;
+}
+
+body .card #header {
+    height: 5vw;
+    
+    padding: 0vw;
+}
+
+body .card #header h1 {
+    color: rgb(36, 153, 221);
+    font-size: 2vw;
+    font-family: "Finger Paint", cursive;
+    padding: 1vw;
+    text-align: center;
+    font-weight: bolder;
+}
+
+body .card #message-section::-webkit-scrollbar {
+    width: 10px;
+}
+
+body .card #message-section {
+    height: 28vw;
+    padding: 0 2.5vw;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--thumbBG) var(--scrollbarBG);
+}
+
+body .card #message-section::-webkit-scrollbar-track {
+    background: var(--scrollbarBG);
+}
+
+body .card #message-section::-webkit-scrollbar-thumb {
+    background-color: var(--thumbBG);
+    border-radius: 6px;
+    border: 3px solid var(--scrollbarBG);
+}
+
+body .card #message-section #bot,
+body .card #message-section #user {
+    position: relative;
+    bottom: 0;
+    min-height: 1.5vw;
+    border: 0.15vw solid #777;
+    background-color: transparent;
+    border-radius: 0px 1.5vw 1.5vw 1.8vw;
+    padding: 1vw;
+    margin: 1.5vw 0;
+}
+
+body .card #message-section #user {
+    border: 1.5px solid #000;
+    border-radius: 1.5vw 0vw 1.5vw 1.8vw;
+    background-color: #000;
+    float: right;
+}
+
+body .card #message-section #user #user-response {
+    color: #fff;
+}
+
+body .card #message-section .message {
+    color: #000;
+    clear: both;
+    line-height: 1.2vw;
+    font-size: 1.2vw;
+    padding: 8px;
+    position: relative;
+    margin: 8px 0;
+    max-width: 85%;
+    word-wrap: break-word;
+    z-index: 2;
+}
+
+body .card #input-section {
+    z-index: 1;
+    padding: 0 2.5vw;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    overflow: hidden;
+    height: 6vw;
+    width: 100%;
+    
+}
+
+
+body .card #input-section input {
+    color: #000;
+    min-width: 0.5vw;
+    outline: none;
+    height: 5vw;
+    width: 26vw;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: solid #000 0.1vw;
+    background: transparent;
+    
+}
+
+body .card .send {
+    background: transparent;
+    color: black;
+    border: 1px;
+    cursor: pointer;
+    flex: 0 0 auto;
+    margin-left: 1.4vw;
+    margin-right: 0vw;
+    padding: 0;
+    position: relative;
+    outline:none;
+
+}
+
+body .card .send .circle {
+    position: relative;
+    width: 4.8vw;
+    height: 4.8vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+body .card .send .circle i {
+    font-size: 3vw;
+    margin-left: -1vw;
+    margin-top: 1vw;
+    color: black;
+}
+/* Default styles for chatbot container */
+.chat-container {
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Default styles for chat input */
+.chat-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/* Default styles for chat input text box */
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    outline: none;
+}
+
+/* Default styles for send button */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 8px 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+/* Media query for screens smaller than 600px */
+@media (max-width: 600px) {
+    .chat-container {
+        width: 100%;
+        border-radius: 0;
+        box-shadow: none;
+    }
+
+    /* Adjust padding and font size for chat input */
+    .chat-input {
+        padding: 5px;
+    }
+
+    input[type="text"] {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    /* Adjust padding for send button */
+    button {
+        padding: 5px 10px;
+    }
+}
