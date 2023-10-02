@@ -5,8 +5,8 @@ body {
 }
 
 body .card {
-    height: 85vh;
-    width: 35vw;
+    height: 75vh;
+    width: 65vw;
     border-radius: 2rem;
     border: rgb(53, 53, 53) 0.1rem solid;
     border-color: rgb(79, 156, 234);
